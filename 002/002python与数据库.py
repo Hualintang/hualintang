@@ -15,14 +15,16 @@ def create_code(num, length):
     
 def save_to_mysql(num_list):
     conn = pymysql.connect(host='localhost', user='root', passwd='root', port=3306)
-    cur = conn.cursor()
+    cur = conn.cursor()# 使用cursor()方法获取操作游标 
+    
     sql_create_database = 'create database if not exists activecode_db'
-    cur.execute(sql_create_database)
+    cur.execute(sql_create_database)#执行数据库操作
+    
     conn.select_db("activecode_db")
     sql_create_table = 'create table if not exists active_codes(active_code char(32))'
     cur.execute(sql_create_table)
     cur.executemany('insert into active_codes values(%s)', num_list)
-    conn.commit()
+    conn.commit()# 提交到数据库执行
     cur.close()
     conn.close()
     
