@@ -1,0 +1,8 @@
+pip install vietualenv
+执行命令：virtualenv testvir
+执行完成：会在当前目录下生成如下文件夹testvir
+进入Scripts目录
+进入虚拟环境：
+执行 activate.bat
+通过执行命令 pip list：可以查看虚拟环境安装了哪些库
+退出虚拟环境 deactivate.bat
