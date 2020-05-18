@@ -1,0 +1,1 @@
+非关系型数据库redis widows版下载地址：https://github.com/microsoftarchive/redis/releases
