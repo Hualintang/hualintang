@@ -20,8 +20,7 @@ avatar
 
 zm = Image.open("2.png")
 draw = ImageDraw.Draw(zm)
-textsize = 20
-ft = ImageFont.truetype("songti.ttc", textsize)
+ft = ImageFont.truetype("songti.ttc",20)
 draw.text((400,50),"小埋",font = ft, fill = 'red')
 zm
 
