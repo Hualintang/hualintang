@@ -1,0 +1,6 @@
+下载mysql-python.whl
+python3.x中用了pymysql来代替MySQLdb
+先安装pymysql
+pip install pymysql
+import pymysql
+pymysql.install_as_MySQLdb()    //手动指定将MySQLdb转给pymysql处理
