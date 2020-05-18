@@ -4,3 +4,10 @@ python3.x中用了pymysql来代替MySQLdb
 pip install pymysql
 import pymysql
 pymysql.install_as_MySQLdb()    //手动指定将MySQLdb转给pymysql处理
+
+
+show databases
+show tables
+use activecode_db
+desc active_codes
+select * from active_codes
