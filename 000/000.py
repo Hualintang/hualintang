@@ -1,3 +1,4 @@
+#图片编辑添加数字
 from PIL import Image, ImageDraw, ImageFont
 
 '''
