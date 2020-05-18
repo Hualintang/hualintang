@@ -12,7 +12,7 @@ def create_code(num, length):
         uuid_id = uuid.uuid1()
         temp = str(uuid_id)[:length]
         temp1=temp[4:23]
-        if not temp in result:
+        #if not temp in result:#可省略
             result.append(temp1)
         if len(result) == num:
             break
