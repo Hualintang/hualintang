@@ -8,6 +8,5 @@ def count_the_words(path):
         count = len(words_list)
     return count
 
-if __name__ == '__main__':
-    nums = count_the_words('file.txt')
-    print nums
+nums = count_the_words('danci.txt')
+print(nums)
