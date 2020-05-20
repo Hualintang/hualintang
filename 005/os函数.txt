@@ -9,25 +9,6 @@ for file in dirs:
    print(file)
 
 Python strip() 方法用于移除字符串头尾指定的字符（默认为空格或换行符）或字符序列
-   
-   
-from PIL import Image
-import os
- 
-os.getcwd()
+os.getcwd()# 获取当前工作目录，即当前python脚本工作的目录路径
 os.chdir(r'C:UsersAlex.hasee-PCDesktoppythonprogram005')#改变工作目录到......
-def resize(filename):
-    img=Image.open(filename)
-    out=img.resize((640,1130),Image.ANTIALIAS)
-    f=filename.strip(".jpg")
-    newname=f+"r.jpg"
-    out.save(newname)
-list=os.listdir(r'C:UsersAlex.hasee-PCDesktoppythonprogram005')
-f_list=[]
-def getextension():
-    for i in list:
-        if os.path.splitext(i)[1]=='.jpg':
-            f_list.append(i)
-getextension()
-for i in  f_list:
-    resize(i)
+
