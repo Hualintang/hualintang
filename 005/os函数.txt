@@ -1,0 +1,31 @@
+import os, sys
+
+# 打开文件
+path = "D:/ubuntu/"
+dirs = os.listdir( path )#os.listdir() 方法用于返回指定的文件夹包含的文件或文件夹的名字的列表。
+
+# 输出所有文件和文件夹
+for file in dirs:
+   print(file)
+   
+   
+from PIL import Image
+import os
+ 
+os.getcwd()
+os.chdir(r'C:UsersAlex.hasee-PCDesktoppythonprogram005')#改变工作目录到......
+def resize(filename):
+    img=Image.open(filename)
+    out=img.resize((640,1130),Image.ANTIALIAS)
+    f=filename.strip(".jpg")
+    newname=f+"r.jpg"
+    out.save(newname)
+list=os.listdir(r'C:UsersAlex.hasee-PCDesktoppythonprogram005')
+f_list=[]
+def getextension():
+    for i in list:
+        if os.path.splitext(i)[1]=='.jpg':
+            f_list.append(i)
+getextension()
+for i in  f_list:
+    resize(i)
