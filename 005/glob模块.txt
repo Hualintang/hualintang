@@ -1,0 +1,3 @@
+glob是python自己带的一个文件操作相关模块，用它可以查找符合自己目的的文件
+glob.glob(r’c:*.txt’)#获得C盘下的所有txt文件
+glob.glob(r’E:\pic**.jpg’)#获得指定目录下的所有jpg文件
