@@ -1,0 +1,11 @@
+'''
+import Image
+im = Image.open('1.jpg')
+im1 = im.resize(box1,Image.ANTIALIAS)     #重新设定大小，设定ANTIALIAS，即抗锯齿
+im1.save('2.jpg',quality=100)           #设置图片质量为100，图片质量0-100
+xsize,ysize = im1.size
+box = (xsize/2-25,ysize/2-25,xsize/2+25,ysize/2+25)     #设置中间的50x50区域
+region=im1.crop(box)     #根据坐标矩阵box，画出区域
+region.save('4.jpg','png',quality=100 )
+im.resize((w,h), Image.ANTIALIAS)#重新设定大小，设定ANTIALIAS，即抗锯齿
+'''
