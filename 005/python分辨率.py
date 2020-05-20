@@ -5,6 +5,8 @@ iPhone5_WIDTH = 1136
 iPhone5_HEIGHT = 640
 
 ext = ['jpg', 'jpeg', 'png']
+files = os.listdir('.')
+
 files = os.listdir(path)
 path = "D:/python测试/"
 
@@ -24,5 +26,5 @@ def process_image(filename, mwidth=640, mheight=1136):
     new_im.close()
     
 for file in files:
-if file.split('.')[-1] in ext:
+if file.split('.')[-1] in ext:#以.为分隔符保留最后一段
     process_image(file)
