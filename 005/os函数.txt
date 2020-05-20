@@ -11,4 +11,6 @@ for file in dirs:
 Python strip() 方法用于移除字符串头尾指定的字符（默认为空格或换行符）或字符序列
 os.getcwd()# 获取当前工作目录，即当前python脚本工作的目录路径
 os.chdir(r'C:UsersAlex.hasee-PCDesktoppythonprogram005')#改变工作目录到......
+os.remove(path)函数用来删除一个文件
+os.rename("oldname","newname") 
 
