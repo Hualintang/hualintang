@@ -5,10 +5,11 @@ iPhone5_WIDTH = 1136
 iPhone5_HEIGHT = 640
 
 ext = ['jpg', 'jpeg', 'png']
-files = os.listdir('.')
-
-files = os.listdir(path)
+os.getcwd()
+os.chdir(r'D:/python测试/')
 path = "D:/python测试/"
+files = os.listdir(path)
+
 
 def process_image(filename, mwidth=640, mheight=1136):
     image = Image.open(filename)
