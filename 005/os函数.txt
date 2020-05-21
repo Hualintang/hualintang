@@ -14,3 +14,9 @@ os.chdir(r'C:UsersAlex.hasee-PCDesktoppythonprogram005')#改变工作目录到..
 os.remove(path)函数用来删除一个文件
 os.rename("oldname","newname") 
 
+
+for (root, dirs, files) in os.walk('D:/python测试/'):
+    print(root)
+    print(dirs)
+    print(files)#获取文件夹下文件名称
+
