@@ -1,4 +1,4 @@
-from PIL import Image, ImageDraw, ImageFont, ImageFilter
+from PIL import Image, ImageDraw, ImageFont, ImageFilter#ImageFilter滤镜模块
 import random
 import os
 os.chdir('D:/python测试/')
