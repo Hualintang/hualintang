@@ -7,3 +7,6 @@ ImageFilter.FIND_EDGES	         边界滤镜
 ImageFilter.SMOOTH	             平滑滤镜
 ImageFilter.SMOOTH_MORE	         平滑滤镜(阀值更大)
 ImageFilter.SHARPEN	             锐化滤镜
+
+
+Image.blend(sg1,sg2,1)#图片叠加
