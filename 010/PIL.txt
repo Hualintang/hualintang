@@ -10,3 +10,59 @@ ImageFilter.SHARPEN	             锐化滤镜
 
 
 Image.blend(sg1,sg2,1)#图片叠加
+#创建新图片
+
+im=Image.new(mode, size) # color的默认值是黑色
+#图片裁剪
+
+box=(100,100,500，500)  # 设置要裁剪的区域
+
+region=im.crop(box)
+#图片裁剪
+
+box=(100,100,500，500)  # 设置要裁剪的区域
+
+region=im.crop(box)
+
+#图片黏贴
+
+im.paste(im1, box) #把im1的box区域黏贴到im中去
+
+#通道分离
+
+r,g,b=im.split() #分割成三个通道，此时r,g,b分别是三个图像对象
+
+#通道合并
+
+im=Image.merge('RGB', (b,g,r)) #将b, r两个通道进行反转
+
+#改变图片的大小
+
+im.resize((128,128))
+
+#缩小图片
+
+im.thumbnail(())
+
+im.thumbnail((w//2, h//2))  # 缩小50%
+#旋转图像
+
+im.rotate(45) #逆时针旋转45度
+
+im.transpose(Image.ROTATE_180)
+
+im.transpose(Image.FLIP_LEFT_RIGHT) #左右兑换
+
+im.transpose(Image.FLIP_TOP_BOTTOM) #上下对换
+
+#图像mode转换
+
+im.convert('RGBA') #图像的mode转换成RGBA类型
+
+#写某个像素位置的值
+
+im.putpixel((4,4), (255,0,0))
+
+#加滤镜
+
+im.filter(ImageFilter.BLUE)
