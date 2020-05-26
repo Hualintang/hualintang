@@ -1,10 +1,8 @@
 import xlwt
-workbook = xlwt.Workbook(encoding = 'utf-8')# 创建一个workbook 设置编码
-worksheet = workbook.add_sheet('My Worksheet')# 创建一个worksheet
+xlwt.Workbook(encoding = 'utf-8')# 创建一个workbook 设置编码
+workbook.add_sheet('My Worksheet')# 创建一个worksheet
 worksheet.write(1,0, label = 'this is test')# 写入excel# 参数对应 行, 列, 值
 workbook.save('Excel_test.xls')# 保存
-workbook = xlwt.Workbook(encoding='utf-8')
-worksheet = workbook.add_sheet('sheet1')
 font = xlwt.Font()#设置字体样式
 font.name = 'Time New Roman'#字体
 font.bold = True#加粗
@@ -13,21 +11,12 @@ font.italic = True#斜体
 style = xlwt.XFStyle()#创建style
 style.font = font
 worksheet.write(0, 1, 'world', style)#根据样式创建workbook
-workbook.save('students.xls')
-workbook = xlwt.Workbook(encoding='utf-8')
-worksheet = workbook.add_sheet('sheet1')
 #通过worksheet调用merge()创建合并单元格
 #第一个和第二个参数单表行合并,第三个和第四个参数列合并,
 #合并第0列到第2列的单元格
 worksheet.write_merge(0, 0, 0, 2, 'first merge')
- 
 #合并第1行第2行第一列的单元格
 worksheet.write_merge(0, 1, 0, 0, 'first merge')
- 
-workbook.save('students.xls')
-
-workbook = xlwt.Workbook(encoding='utf-8')
-worksheet = workbook.add_sheet('sheet1')
 alignment = xlwt.Alignment()
 # 水平居中
 alignment.horz = xlwt.Alignment.HORZ_CENTER
@@ -37,10 +26,8 @@ style = xlwt.XFStyle()
 style.alignment = alignment
 #设置单元格宽度
 worksheet.col(0).width = 6666
- 
 #设置单元格的高度
 worksheet.row(0).height_mismatch = True
 worksheet.row(0).height = 1000
- 
 worksheet.write(0, 0, 'hello world', style)
-workbook.save('center.xls')
+
