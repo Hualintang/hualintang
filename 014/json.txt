@@ -1,1 +1,13 @@
+json.dumps 用于将 Python 对象编码成 JSON 字符串
+json.dumps(obj, skipkeys=False, ensure_ascii=True, check_circular=True, allow_nan=True, cls=None, indent=None, separators=None, encoding="utf-8", default=None, sort_keys=False, **kw)
+skipkeys参数，在encoding过程中，dict对象的key只可以是string对象，如果是其他类型，那么在编码过程中就会抛出ValueError的异常。skipkeys可以跳过那些非string对象当作key的处理
+输出真正的中文需要指定ensure_ascii=False,如果无任何配置，或者说使用默认配置，将输出ascII码
+check_circular	循环类型检查，如果为True的话
+allow_nan	确定是否为允许的值
+indent	会以美观的方式来打印，呈现，实现缩进
+separators	对象分隔符，默认为,
+sort_keys	如果是字典对象，选择True的话，会按照键的ASCII码来排序
+*args：表示就是将实参中按照位置传值，多余的值都给args，且以元组的方式呈现
+**kw：表示就是形参中按照关键字传值，多余的值都给kw，且以字典*的方式呈现
 
+json.loads 用于解码 JSON 数据。该函数返回 Python 字段的数据类型
