@@ -25,3 +25,5 @@ hex()：其他进制转十六进制
 十六进制：以“0x”开头，如：0x1f为十进制的31
 
 reduce() 函数会对参数序列中元素进行累积
+
+operator模块输出一系列对应Python内部操作符的函数https://blog.csdn.net/zhtysw/article/details/80510113
