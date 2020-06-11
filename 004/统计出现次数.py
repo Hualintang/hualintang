@@ -10,3 +10,22 @@ def count_the_words(path):
 
 nums = count_the_words('danci.txt')
 print(nums)
+
+#获取文本文件字符数
+
+import collections
+import pprint
+def main():
+    file_input = input('File Name: ')
+    try:
+        with open(file_input, 'r',encoding='utf-8') as info:
+            count = collections.Counter(info.read().upper())
+    except FileNotFoundError:
+        print("Please enter a valid file name.")
+        main()
+
+    value = pprint.pformat(count)
+    print(value)
+
+if __name__ == "__main__":
+    main()
