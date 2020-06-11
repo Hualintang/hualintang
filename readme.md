@@ -27,3 +27,5 @@ hex()：其他进制转十六进制
 reduce() 函数会对参数序列中元素进行累积
 
 operator模块输出一系列对应Python内部操作符的函数https://blog.csdn.net/zhtysw/article/details/80510113
+
+collections.Counter('hello world')#collections函数统计字符出现的次数
