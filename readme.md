@@ -35,3 +35,5 @@ collections.namedturple()#创建一个和元组类似但更为强大的类型—
 choice(deck)#choice() 方法返回一个列表，元组或字符串的随机项。
 
 filter() 函数用于过滤序列，过滤掉不符合条件的元素，返回由符合条件元素组成的新列表
+
+bisect模块bisect.bisect(seq, item, lo = 0, hi =len(list_name))在有序列表 seq 中查找 item 的位置，并且返回其 索引 (index)，使得插入item后序列依然保持有序https://blog.csdn.net/u014120401/article/details/78808476
