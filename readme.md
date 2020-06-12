@@ -29,3 +29,9 @@ reduce() 函数会对参数序列中元素进行累积
 operator模块输出一系列对应Python内部操作符的函数https://blog.csdn.net/zhtysw/article/details/80510113
 
 collections.Counter('hello world')#collections函数统计字符出现的次数
+
+collections.namedturple()#创建一个和元组类似但更为强大的类型——具名元组（namedtuple），也就是构造一个带字段名的元组。
+
+choice(deck)#choice() 方法返回一个列表，元组或字符串的随机项。
+
+filter() 函数用于过滤序列，过滤掉不符合条件的元素，返回由符合条件元素组成的新列表
