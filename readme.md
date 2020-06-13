@@ -40,3 +40,6 @@ bisect模块bisect.bisect(seq, item, lo = 0, hi =len(list_name))在有序列表 
 
 collections.deque类是一个线程安全，可以快速从两端添加或删除元素的数据类型
 
+heapq.nlargest(3, nums))#查找集合最大的三个元素
+heapq.nsmallest(3, portfolio, key=lambda s: s['price'])上面代码在对每个元素进行对比的时候，会以 price 的值进行比较
+
