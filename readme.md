@@ -43,3 +43,6 @@ collections.deque类是一个线程安全，可以快速从两端添加或删除
 heapq.nlargest(3, nums))#查找集合最大的三个元素
 heapq.nsmallest(3, portfolio, key=lambda s: s['price'])上面代码在对每个元素进行对比的时候，会以 price 的值进行比较
 
+heapq模块实现了一个适用于python列表的最小堆排序算法https://www.cnblogs.com/Joyce-song94/p/7149440.html
+
+
