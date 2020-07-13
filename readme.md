@@ -45,4 +45,8 @@ heapq.nsmallest(3, portfolio, key=lambda s: s['price'])上面代码在对每个�
 
 heapq模块实现了一个适用于python列表的最小堆排序算法https://www.cnblogs.com/Joyce-song94/p/7149440.html
 
+readlines把文件的全部内容读到内存，并解析成一个list，当文件体积很大时，需要占用很多内存
 
+0,[],(),{},'',False,None布尔值为False
+
+dict={'a':24,'g':52,'i':33,'k':12}#sorted(dict.items(),key=lambda x:x[1])
