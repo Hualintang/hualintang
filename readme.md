@@ -1,4 +1,4 @@
-set(list)#创建不重复数组
+set() 函数创建一个无序不重复元素集，可进行关系测试，删除重复数据，还可以计算交集、差集、并集等
 
 .isdigit()#检测字符串是否只由数字组成
 
@@ -50,3 +50,5 @@ readlines把文件的全部内容读到内存，并解析成一个list，当文�
 0,[],(),{},'',False,None布尔值为False
 
 dict={'a':24,'g':52,'i':33,'k':12}#sorted(dict.items(),key=lambda x:x[1])
+
+copy()只拷贝数据集合第一层，deepcopy()拷贝所有层
